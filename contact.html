@@ -82,7 +82,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
 
-                <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+                <p>If you want to get in touch, please send me your details below and I will get back to you as soon as possible!</p>
 <form name="sentMessage" id="contactForm" action="https://formspree.io/mdowpvqb" novalidate="">
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
@@ -95,13 +95,6 @@
     <div class="form-group floating-label-form-group controls">
       <label>Email Address</label>
       <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address." />
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group col-xs-12 floating-label-form-group controls">
-      <label>Phone Number</label>
-      <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" data-validation-required-message="Please enter your phone number." />
       <p class="help-block text-danger"></p>
     </div>
   </div>
@@ -218,18 +211,20 @@ $(function () {
             $.ajax({
                 url: "https://formspree.io/xyynbarr",
                 type: "POST",
-                data: {
+                data: JSON.stringify({
                     name: name,
                     phone: phone,
                     email: email,
                     message: message
-                },
+                }),
+                contentType: "application/json",
+                dataType: "json",
                 cache: false,
                 success: function () {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                    $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
+                    $('#success > .alert-success').append("<strong>Thank you! I have received your message and I will get back to you at the earliest.</strong>");
                     $('#success > .alert-success').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
@@ -238,7 +233,7 @@ $(function () {
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+                    $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", looks like something's wrong. Please try again later!"));
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
