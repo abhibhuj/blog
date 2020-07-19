@@ -13,7 +13,7 @@ img_credits:
   website: Unsplash
 ---
 
-<p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+<p>If you want to get in touch, please send me your details below and I will get back to you as soon as possible!</p>
 <form name="sentMessage" id="contactForm" action="https://formspree.io/mdowpvqb" novalidate>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
@@ -26,13 +26,6 @@ img_credits:
     <div class="form-group floating-label-form-group controls">
       <label>Email Address</label>
       <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-      <p class="help-block text-danger"></p>
-    </div>
-  </div>
-  <div class="control-group">
-    <div class="form-group col-xs-12 floating-label-form-group controls">
-      <label>Phone Number</label>
-      <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
       <p class="help-block text-danger"></p>
     </div>
   </div>
