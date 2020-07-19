@@ -1,21 +1,18 @@
 ---
 layout: page
-title: About
 tagline: A few more words about this theme
 permalink: /about
 ref: about
 order: 0
+background: /assets/images/about.jpg
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I am a Solutions Architect and a Full Stack Developer experienced in providing and implementing technical solutions to complex business problems. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+My specializations include Web Applications, Modernization, Cloud Native Computing, DevOps, Artificial Intelligence and Big Data.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Apart from being a Developer, I enjoy being physically active. Playing volleyball, working out, hiking and running are few of the things that I enjoy.
 
+![volleyball](https://media.giphy.com/media/fwVym0cMgLrmpk1XDO/giphy.gif)
 
-[jekyll-organization]: https://github.com/jekyll
+I also try to pick up new skills to keep my brain active. I'm an aspiring salsa dancer and a wanna be drummer. I spend a large amount of my free time exploring the latest technology advancements in various fields.

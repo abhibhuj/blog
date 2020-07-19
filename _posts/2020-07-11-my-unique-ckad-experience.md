@@ -3,11 +3,17 @@ layout: post
 author: Abhi
 title:  "My unique CKAD experience"
 categories: certifications kubernetes
+background: /assets/images/helm.jpg
+img_credits:
+  name: Joseph Barrientos
+  url: https://unsplash.com/@jbcreate
+  website: Unsplash
 ---
-
-So, I passed the CKAD exam and I thought I'd share my unique (almost failed) experience.
+So, I passed the CKAD exam and I thought I'd share my unique experience.
 
 > TL;DR: Practice, practice and practice. Improve your YAML and VIM skills. Good luck!
+
+![practice](https://media.giphy.com/media/B1uajA01vvL91Urtsp/giphy.gif)
 
 Just to be clear, there are 2 kinds of kubernetes certifications and I took the `developer` one.
 <br>
@@ -62,7 +68,7 @@ I spent good few days to practice Vim and learn all the necessary shortcuts.
 
 Here's my `.vimrc` config that I used for the exam
 
-```
+```vim
 syntax on
 
 set nu ic is ai et st=2 sw=2 pt=<F2>
@@ -99,10 +105,10 @@ There are 2 ways to create resources in Kubernetes.
           image: nginx
       ```
         
-        To create the nginx pod you run the command `kubectl apply -f nginx.yaml`
+        To create the nginx pod you run the command <br> `kubectl apply -f nginx.yaml`
         
 - **Imperative** way will create the resources without explicitly creating the yaml file.
-    - The same nginx pod can be created using `kubectl run nginx --image=nginx`
+    - The same nginx pod can be created using <br> `kubectl run nginx --image=nginx`
 
 Get good with creating resources the imperative way. This will save you a lot of time during the exam.
 
@@ -157,6 +163,8 @@ Unfortunately, once I started typing on the command line, it went blank and I co
 I thought something's wrong with the exam environment and explained this to the proctor and they gave me a new exam environment.
 And again the same experience and now I can see myself panicking a bit when I saw the time remaining :scream:
 
+![this_is_not_fine](https://media.giphy.com/media/1FMaabePDEfgk/giphy.gif)
+
 I was using an older version of MacBook Pro (2011) High Sierra (Don't you judge me!)
 Luckily I had a chromebook and I asked the proctor if I could switch laptop real quick and they agreed! :smile:
 
@@ -165,9 +173,14 @@ I wasn't able to attend all the questions but I was confident on the ones I did.
 
 Finally, the result came after couple of days and I had passed the exam!
 
+![celebrate](https://media.giphy.com/media/Is1O1TWV0LEJi/giphy.gif)
+
 I would encourage you to try and use the latest mac/laptops or one that isn't old as mine!
 
 #### I wish you Good luck on your exam!
+
+![you_got_this](https://media.giphy.com/media/1xVbRS6j52YSzp9P7N/giphy.gif)
+
 Leave a comment on your experience.
 
-### Keep calm and kubectl :v:
+#### Keep calm and kubectl :v:

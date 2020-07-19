@@ -4,7 +4,7 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.url}}')">
     {% else %}
     <header class="masthead">
         {% endif %}
@@ -26,6 +26,9 @@ layout: default
                     </div>
                 </div>
             </div>
+            {% if page.img_credits %}
+            <div class="float-right pt-1 img-credits">Photo by <a href="{{page.img_credits.url}}">{{page.img_credits.name}}</a> on {{page.img_credits.website}}</div>
+            {% endif %}
         </div>
     </header>
 

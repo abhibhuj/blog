@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-07-16T12:42:28-05:00</updated><id>/feed.xml</id><title type="html">Abhi</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">My unique CKAD experience</title><link href="/certifications/kubernetes/2020/07/11/my-unique-ckad-experience.html" rel="alternate" type="text/html" title="My unique CKAD experience" /><published>2020-07-11T00:00:00-05:00</published><updated>2020-07-11T00:00:00-05:00</updated><id>/certifications/kubernetes/2020/07/11/my-unique-ckad-experience</id><content type="html" xml:base="/certifications/kubernetes/2020/07/11/my-unique-ckad-experience.html">&lt;p&gt;So, I passed the CKAD exam and I thought I’d share my unique (almost failed) experience.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-07-19T01:24:35-05:00</updated><id>/feed.xml</id><title type="html">Abhi</title><subtitle>Welcome to my blog. I write about tech, my life and my dog!</subtitle><author><name>Abhi</name></author><entry><title type="html">My unique CKAD experience</title><link href="/certifications/kubernetes/2020/07/11/my-unique-ckad-experience.html" rel="alternate" type="text/html" title="My unique CKAD experience" /><published>2020-07-11T00:00:00-05:00</published><updated>2020-07-11T00:00:00-05:00</updated><id>/certifications/kubernetes/2020/07/11/my-unique-ckad-experience</id><content type="html" xml:base="/certifications/kubernetes/2020/07/11/my-unique-ckad-experience.html">&lt;p&gt;So, I passed the CKAD exam and I thought I’d share my unique experience.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;TL;DR: Practice, practice and practice. Improve your YAML and VIM skills. Good luck!&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/B1uajA01vvL91Urtsp/giphy.gif&quot; alt=&quot;practice&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Just to be clear, there are 2 kinds of kubernetes certifications and I took the &lt;code class=&quot;highlighter-rouge&quot;&gt;developer&lt;/code&gt; one.
 &lt;br /&gt;
@@ -65,9 +67,9 @@ I spent good few days to practice Vim and learn all the necessary shortcuts.&lt;
 
 &lt;p&gt;Here’s my &lt;code class=&quot;highlighter-rouge&quot;&gt;.vimrc&lt;/code&gt; config that I used for the exam&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;syntax on
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;syntax&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;on&lt;/span&gt;
 
-set nu ic is ai et st=2 sw=2 pt=&amp;lt;F2&amp;gt;
+&lt;span class=&quot;k&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;nu&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ic&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ai&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;et&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;sw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;pt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&amp;lt;&lt;/span&gt;F2&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -105,13 +107,13 @@ set nu ic is ai et st=2 sw=2 pt=&amp;lt;F2&amp;gt;
     &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nginx&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
 
-        &lt;p&gt;To create the nginx pod you run the command &lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl apply -f nginx.yaml&lt;/code&gt;&lt;/p&gt;
+        &lt;p&gt;To create the nginx pod you run the command &lt;br /&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl apply -f nginx.yaml&lt;/code&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Imperative&lt;/strong&gt; way will create the resources without explicitly creating the yaml file.
     &lt;ul&gt;
-      &lt;li&gt;The same nginx pod can be created using &lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl run nginx --image=nginx&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;The same nginx pod can be created using &lt;br /&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl run nginx --image=nginx&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -175,6 +177,8 @@ Unfortunately, once I started typing on the command line, it went blank and I co
 &lt;p&gt;I thought something’s wrong with the exam environment and explained this to the proctor and they gave me a new exam environment.
 And again the same experience and now I can see myself panicking a bit when I saw the time remaining :scream:&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/1FMaabePDEfgk/giphy.gif&quot; alt=&quot;this_is_not_fine&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;I was using an older version of MacBook Pro (2011) High Sierra (Don’t you judge me!)
 Luckily I had a chromebook and I asked the proctor if I could switch laptop real quick and they agreed! :smile:&lt;/p&gt;
 
@@ -183,171 +187,14 @@ I wasn’t able to attend all the questions but I was confident on the ones I di
 
 &lt;p&gt;Finally, the result came after couple of days and I had passed the exam!&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/Is1O1TWV0LEJi/giphy.gif&quot; alt=&quot;celebrate&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;I would encourage you to try and use the latest mac/laptops or one that isn’t old as mine!&lt;/p&gt;
 
 &lt;h4 id=&quot;i-wish-you-good-luck-on-your-exam&quot;&gt;I wish you Good luck on your exam!&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/1xVbRS6j52YSzp9P7N/giphy.gif&quot; alt=&quot;you_got_this&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Leave a comment on your experience.&lt;/p&gt;
 
-&lt;h3 id=&quot;keep-calm-and-kubectl-v&quot;&gt;Keep calm and kubectl :v:&lt;/h3&gt;</content><author><name>Abhi</name></author><category term="certifications" /><category term="kubernetes" /><summary type="html">So, I passed the CKAD exam and I thought I’d share my unique (almost failed) experience.</summary></entry><entry><title type="html">Example content</title><link href="/2020/07/10/example.html" rel="alternate" type="text/html" title="Example content" /><published>2020-07-10T00:00:00-05:00</published><updated>2020-07-10T00:00:00-05:00</updated><id>/2020/07/10/example</id><content type="html" xml:base="/2020/07/10/example.html">&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/about.html&quot;&gt;Link to another page: About&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;There should be whitespace between paragraphs.&lt;/p&gt;
-
-&lt;p&gt;There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.&lt;/p&gt;
-
-&lt;h1 id=&quot;header-1&quot;&gt;&lt;a href=&quot;#header-1&quot;&gt;&lt;/a&gt;Header 1&lt;/h1&gt;
-
-&lt;p&gt;This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.&lt;/p&gt;
-
-&lt;h2 id=&quot;header-2&quot;&gt;&lt;a href=&quot;#header-2&quot;&gt;&lt;/a&gt;Header 2&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This is a blockquote following a header.&lt;/p&gt;
-
-  &lt;p&gt;When something is important enough, you do it even if the odds are not in your favor.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;header-3&quot;&gt;&lt;a href=&quot;#header-3&quot;&gt;&lt;/a&gt;Header 3&lt;/h3&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Javascript code with syntax highlighting.&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;dateformat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i18n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./lang/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Ruby code with syntax highlighting&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;GitHubPages&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Dependencies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gems&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;add_dependency&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;= &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;header-4&quot;&gt;&lt;a href=&quot;#header-4&quot;&gt;&lt;/a&gt;Header 4&lt;/h4&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
-  &lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
-  &lt;li&gt;This is an unordered list following a header.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;header-5&quot;&gt;&lt;a href=&quot;#header-5&quot;&gt;&lt;/a&gt;Header 5&lt;/h5&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
-  &lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
-  &lt;li&gt;This is an ordered list following a header.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h6 id=&quot;header-6&quot;&gt;&lt;a href=&quot;#header-6&quot;&gt;&lt;/a&gt;Header 6&lt;/h6&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;head1&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;head two&lt;/th&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;three&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ok&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;good swedish fish&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;nice&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;out of stock&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;good and plenty&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;nice&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ok&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;good &lt;code class=&quot;highlighter-rouge&quot;&gt;oreos&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;hmm&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;ok&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;good &lt;code class=&quot;highlighter-rouge&quot;&gt;zoute&lt;/code&gt; drop&lt;/td&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;yumm&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;theres-a-horizontal-rule-below-this&quot;&gt;There’s a horizontal rule below this.&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;here-is-an-unordered-list&quot;&gt;Here is an unordered list:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Item foo&lt;/li&gt;
-  &lt;li&gt;Item bar&lt;/li&gt;
-  &lt;li&gt;Item baz&lt;/li&gt;
-  &lt;li&gt;Item zip&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;and-an-ordered-list&quot;&gt;And an ordered list:&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Item one&lt;/li&gt;
-  &lt;li&gt;Item two&lt;/li&gt;
-  &lt;li&gt;Item three&lt;/li&gt;
-  &lt;li&gt;Item four&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;and-a-nested-list&quot;&gt;And a nested list:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;level 1 item
-    &lt;ul&gt;
-      &lt;li&gt;level 2 item&lt;/li&gt;
-      &lt;li&gt;level 2 item
-        &lt;ul&gt;
-          &lt;li&gt;level 3 item&lt;/li&gt;
-          &lt;li&gt;level 3 item&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;level 1 item
-    &lt;ul&gt;
-      &lt;li&gt;level 2 item&lt;/li&gt;
-      &lt;li&gt;level 2 item&lt;/li&gt;
-      &lt;li&gt;level 2 item&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;level 1 item
-    &lt;ul&gt;
-      &lt;li&gt;level 2 item&lt;/li&gt;
-      &lt;li&gt;level 2 item&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;level 1 item&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;small-image&quot;&gt;Small image&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://github.githubassets.com/images/icons/emoji/octocat.png&quot; alt=&quot;Octocat&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;large-image&quot;&gt;Large image&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://guides.github.com/activities/hello-world/branching.png&quot; alt=&quot;Branching&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;definition-lists-can-be-used-with-html-syntax&quot;&gt;Definition lists can be used with HTML syntax.&lt;/h3&gt;
-
-&lt;dl&gt;
-&lt;dt&gt;Name&lt;/dt&gt;
-&lt;dd&gt;Godzilla&lt;/dd&gt;
-&lt;dt&gt;Born&lt;/dt&gt;
-&lt;dd&gt;1952&lt;/dd&gt;
-&lt;dt&gt;Birthplace&lt;/dt&gt;
-&lt;dd&gt;Japan&lt;/dd&gt;
-&lt;dt&gt;Color&lt;/dt&gt;
-&lt;dd&gt;Green&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The final element.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Text can be bold, italic, or strikethrough.</summary></entry></feed>
+&lt;h4 id=&quot;keep-calm-and-kubectl-v&quot;&gt;Keep calm and kubectl :v:&lt;/h4&gt;</content><author><name>Abhi</name></author><category term="certifications" /><category term="kubernetes" /><summary type="html">So, I passed the CKAD exam and I thought I’d share my unique experience.</summary></entry></feed>
